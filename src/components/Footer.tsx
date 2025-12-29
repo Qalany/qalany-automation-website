@@ -33,13 +33,13 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-1 mb-4">
               <img
                 src={qalanyLogo}
                 alt="Qalany"
                 className="h-10 w-auto"
               />
-              <span className="text-xl font-bold">Qalany</span>
+              <span className="text-2xl font-bold">Qalany</span>
             </div>
             <p className="text-sm text-accent-foreground/70 leading-relaxed">
               Making automation simple, transparent, and accessible to everyone.
