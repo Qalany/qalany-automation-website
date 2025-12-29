@@ -10,24 +10,24 @@ const Hero = () => {
     >
       {/* Subtle background decoration */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary rounded-full blur-3xl" />
+        <div className="absolute top-20 right-0 w-[600px] h-[600px] bg-secondary/50 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary/30 rounded-full blur-3xl" />
       </div>
 
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: Content */}
           <div className="space-y-8 animate-slide-up">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary rounded-full">
-              <span className="w-2 h-2 bg-primary rounded-full animate-pulse-soft" />
-              <span className="text-sm font-medium text-muted-foreground">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 rounded-full">
+              <span className="w-2 h-2 bg-accent rounded-full animate-pulse-soft" />
+              <span className="text-sm font-medium text-foreground">
                 Automation for Everyone
               </span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
               Automate Your Work{" "}
-              <span className="text-primary">Without Writing Code</span>
+              <span className="text-accent">Without Writing Code</span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">

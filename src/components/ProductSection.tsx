@@ -34,7 +34,7 @@ const ProductSection = () => {
       <div className="container">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-4">
+          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
             How It Works
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
@@ -56,14 +56,14 @@ const ProductSection = () => {
           {features.map((feature, index) => (
             <div
               key={feature.title}
-              className={`group relative bg-card rounded-2xl p-6 shadow-soft border border-border/50 hover:shadow-elevated transition-all duration-500 hover:-translate-y-1 animate-slide-up`}
+              className={`group relative bg-card rounded-2xl p-6 shadow-soft border border-border hover:shadow-elevated transition-all duration-500 hover:-translate-y-1 animate-slide-up`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               <div className="relative z-10">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300">
-                  <feature.icon className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors duration-300">
+                  <feature.icon className="w-6 h-6 text-accent" />
                 </div>
 
                 <h3 className="text-lg font-bold text-foreground mb-2">
