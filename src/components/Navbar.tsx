@@ -19,9 +19,9 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
       <nav className="container mx-auto flex items-center justify-between py-4">
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-3">
+        <a href="#home" className="flex items-center gap-1">
           <img src={qalanyLogo} alt="Qalany Logo" className="h-10 w-auto" />
-          <span className="text-xl font-bold text-foreground">Qalany</span>
+          <span className="text-2xl font-bold text-foreground">Qalany</span>
         </a>
 
         {/* Desktop Navigation */}
