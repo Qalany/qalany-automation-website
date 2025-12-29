@@ -70,7 +70,7 @@ const WorkflowGraphic = () => {
           </div>
 
           {/* Connecting lines */}
-          <div className="absolute left-[52px] top-24 bottom-24 w-0.5 bg-gradient-to-b from-accent/30 via-accent/50 to-accent/30" />
+          {/* <div className="absolute left-[52px] top-24 bottom-24 w-0.5 bg-gradient-to-b from-accent/30 via-accent/50 to-accent/30" /> */}
         </div>
       </div>
 

@@ -18,7 +18,7 @@ const features = [
     icon: Puzzle,
     title: "Easy Customization",
     description:
-      "Modify any part of your workflow with drag-and-drop simplicity. Make it work exactly how you need.",
+      "Modify any part of your workflow in a few clicks or messages. Make it work exactly how you need.",
   },
   {
     icon: LineChart,

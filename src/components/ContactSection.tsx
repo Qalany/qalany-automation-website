@@ -52,7 +52,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email us at</p>
-                  <p className="font-medium text-foreground">hello@qalany.com</p>
+                  <p className="font-medium text-foreground">oshadha.qalany@gmail.com</p>
                 </div>
               </div>
 
@@ -62,7 +62,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Call us at</p>
-                  <p className="font-medium text-foreground">+1 (555) 123-4567</p>
+                  <p className="font-medium text-foreground">(+94) 77 622 3239</p>
                 </div>
               </div>
 
@@ -73,7 +73,7 @@ const ContactSection = () => {
                 <div>
                   <p className="text-sm text-muted-foreground">Visit us at</p>
                   <p className="font-medium text-foreground">
-                    San Francisco, California
+                    Colombo, Sri Lanka
                   </p>
                 </div>
               </div>

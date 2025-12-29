@@ -26,8 +26,8 @@ const Hero = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
-              Automate Your Work{" "}
-              <span className="text-accent">Without Writing Code</span>
+              Free Your Time{" "}
+              <span className="text-accent">for What Truly Matters</span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
@@ -48,18 +48,18 @@ const Hero = () => {
 
             <div className="flex items-center gap-8 pt-4">
               <div className="text-center">
-                <div className="text-2xl font-bold text-foreground">500+</div>
-                <div className="text-sm text-muted-foreground">Workflows Created</div>
+                <div className="text-2xl font-bold text-foreground">&lt; 5 min</div>
+                <div className="text-sm text-muted-foreground">to first workflow</div>
               </div>
               <div className="w-px h-10 bg-border" />
               <div className="text-center">
-                <div className="text-2xl font-bold text-foreground">98%</div>
-                <div className="text-sm text-muted-foreground">User Satisfaction</div>
+                <div className="text-2xl font-bold text-foreground">100%</div>
+                <div className="text-sm text-muted-foreground">workflow visibility</div>
               </div>
               <div className="w-px h-10 bg-border" />
               <div className="text-center">
                 <div className="text-2xl font-bold text-foreground">10x</div>
-                <div className="text-sm text-muted-foreground">Faster Setup</div>
+                <div className="text-sm text-muted-foreground">clearer than scripts</div>
               </div>
             </div>
           </div>

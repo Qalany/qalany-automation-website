@@ -18,7 +18,7 @@ const ProductFlowchart = () => {
       icon: GitBranch,
       title: "You Customize",
       subtitle: "Visual flowchart",
-      example: "Drag, drop, and adjust any step",
+      example: "Edit each step, logic, and conditions visually",
     },
     {
       icon: Play,
@@ -103,10 +103,10 @@ const ProductFlowchart = () => {
               <div className="flex flex-col items-center">
                 <div className="w-20 h-20 rounded-xl bg-accent/10 border-2 border-accent/30 flex items-center justify-center">
                   <span className="text-xs font-semibold text-accent text-center px-1">
-                    New Lead
+                    Workflow
                   </span>
                 </div>
-                <span className="text-xs text-muted-foreground mt-2">Trigger</span>
+                <span className="text-xs text-muted-foreground mt-2">Triger</span>
               </div>
 
               <ArrowRight className="text-muted-foreground/50" />

@@ -37,7 +37,7 @@ const Footer = () => {
               <img
                 src={qalanyLogo}
                 alt="Qalany"
-                className="h-10 w-auto brightness-0 invert"
+                className="h-10 w-auto"
               />
               <span className="text-xl font-bold">Qalany</span>
             </div>
@@ -115,7 +115,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="border-t border-accent-foreground/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-accent-foreground/60">
-            2024 Qalany. All rights reserved.
+            &copy; {new Date().getFullYear()} Qalany. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a
@@ -125,7 +125,7 @@ const Footer = () => {
               Twitter
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/qalany"
               className="text-sm text-accent-foreground/60 hover:text-accent-foreground transition-colors duration-200"
             >
               LinkedIn
@@ -134,7 +134,7 @@ const Footer = () => {
               href="#"
               className="text-sm text-accent-foreground/60 hover:text-accent-foreground transition-colors duration-200"
             >
-              GitHub
+              Facebook
             </a>
           </div>
         </div>
