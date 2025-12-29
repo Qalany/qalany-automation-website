@@ -30,12 +30,12 @@ const blogs = [
 
 const BlogsSection = () => {
   return (
-    <section id="blogs" className="py-24 bg-muted/30">
+    <section id="blogs" className="py-24 bg-secondary/30">
       <div className="container">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
           <div>
-            <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-4">
+            <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
               Latest Insights
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
@@ -53,20 +53,20 @@ const BlogsSection = () => {
           {blogs.map((blog, index) => (
             <article
               key={blog.title}
-              className={`group relative bg-card rounded-2xl overflow-hidden shadow-soft border border-border/50 hover:shadow-elevated transition-all duration-500 hover:-translate-y-1 animate-slide-up`}
+              className={`group relative bg-card rounded-2xl overflow-hidden shadow-soft border border-border hover:shadow-elevated transition-all duration-500 hover:-translate-y-1 animate-slide-up`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Image placeholder */}
               <div className="aspect-[16/10] bg-gradient-to-br from-secondary to-muted flex items-center justify-center">
-                <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-primary">Q</span>
+                <div className="w-16 h-16 rounded-2xl bg-accent/10 flex items-center justify-center">
+                  <span className="text-2xl font-bold text-accent">Q</span>
                 </div>
               </div>
 
               {/* Content */}
               <div className="p-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">
+                  <span className="text-xs font-semibold text-accent-foreground bg-accent px-3 py-1 rounded-full">
                     {blog.category}
                   </span>
                   <span className="flex items-center gap-1 text-xs text-muted-foreground">
@@ -75,7 +75,7 @@ const BlogsSection = () => {
                   </span>
                 </div>
 
-                <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors duration-300">
                   {blog.title}
                 </h3>
 
@@ -87,7 +87,7 @@ const BlogsSection = () => {
                   <span className="text-xs text-muted-foreground">{blog.date}</span>
                   <ArrowUpRight
                     size={18}
-                    className="text-muted-foreground group-hover:text-primary transition-colors duration-300"
+                    className="text-muted-foreground group-hover:text-accent transition-colors duration-300"
                   />
                 </div>
               </div>

@@ -2,10 +2,10 @@ import { Target, Lightbulb } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 bg-muted/30">
+    <section id="about" className="py-24 bg-secondary/30">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-slide-up">
-          <span className="inline-block text-sm font-semibold text-primary uppercase tracking-wider mb-4">
+          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
             About Us
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
@@ -19,12 +19,12 @@ const AboutSection = () => {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Mission Card */}
-          <div className="group relative bg-card rounded-3xl p-8 shadow-card border border-border/50 hover:shadow-3d transition-all duration-500 hover:-translate-y-2">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          <div className="group relative bg-card rounded-3xl p-8 shadow-card border border-border hover:shadow-elevated transition-all duration-500 hover:-translate-y-2">
+            <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             
             <div className="relative z-10">
-              <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6">
-                <Target className="w-7 h-7 text-primary" />
+              <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6">
+                <Target className="w-7 h-7 text-accent" />
               </div>
               
               <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
@@ -38,12 +38,12 @@ const AboutSection = () => {
           </div>
 
           {/* Vision Card */}
-          <div className="group relative bg-card rounded-3xl p-8 shadow-card border border-border/50 hover:shadow-3d transition-all duration-500 hover:-translate-y-2">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          <div className="group relative bg-card rounded-3xl p-8 shadow-card border border-border hover:shadow-elevated transition-all duration-500 hover:-translate-y-2">
+            <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             
             <div className="relative z-10">
-              <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6">
-                <Lightbulb className="w-7 h-7 text-primary" />
+              <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6">
+                <Lightbulb className="w-7 h-7 text-accent" />
               </div>
               
               <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
@@ -66,7 +66,7 @@ const AboutSection = () => {
             { label: "Trust", value: "Earned" },
           ].map((item) => (
             <div key={item.label} className="text-center p-4">
-              <div className="text-2xl font-bold text-primary mb-1">{item.value}</div>
+              <div className="text-2xl font-bold text-accent mb-1">{item.value}</div>
               <div className="text-sm text-muted-foreground">{item.label}</div>
             </div>
           ))}
