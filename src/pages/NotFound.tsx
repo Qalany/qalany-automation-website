@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import qalanyLogo from "@/assets/qalany-logo.png";
+import qalanyLogo from "@/assets/qalany-logo-bright.png";
 
 const NotFound = () => {
   const location = useLocation();
