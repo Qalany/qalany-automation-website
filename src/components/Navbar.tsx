@@ -1,19 +1,26 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useToast } from "@/hooks/use-toast";
 import qalanyLogo from "@/assets/qalany-logo-bright.png";
 
 const navLinks = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Product", href: "#product" },
-  { name: "Blogs", href: "#blogs" },
-  { name: "Team", href: "#team" },
   { name: "Contact Us", href: "#contact" },
 ];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { toast } = useToast();
+
+  const handleComingSoon = () => {
+    toast({
+      title: "Stay tuned!",
+      description: "Coming soon.",
+    });
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
@@ -39,7 +46,7 @@ const Navbar = () => {
 
         {/* CTA Button */}
         <div className="hidden lg:block">
-          <Button variant="hero" size="default">
+          <Button variant="hero" size="default" onClick={handleComingSoon}>
             Get Started
           </Button>
         </div>
@@ -68,7 +75,7 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <Button variant="hero" size="default" className="mt-4 w-full">
+            <Button variant="hero" size="default" className="mt-4 w-full" onClick={handleComingSoon}>
               Get Started
             </Button>
           </div>
