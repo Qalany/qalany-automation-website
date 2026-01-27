@@ -1,8 +1,18 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useToast } from "@/hooks/use-toast";
 import WorkflowGraphic from "./WorkflowGraphic";
 
 const Hero = () => {
+  const { toast } = useToast();
+
+  const handleComingSoon = () => {
+    toast({
+      title: "Stay tuned!",
+      description: "Coming soon.",
+    });
+  };
+
   return (
     <section
       id="home"
@@ -37,11 +47,11 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg">
+              <Button variant="hero" size="lg" onClick={handleComingSoon}>
                 Start Automating
                 <ArrowRight className="ml-2" size={18} />
               </Button>
-              <Button variant="outline" size="lg">
+              <Button variant="outline" size="lg" onClick={handleComingSoon}>
                 See How It Works
               </Button>
             </div>
