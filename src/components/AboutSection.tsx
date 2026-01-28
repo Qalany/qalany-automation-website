@@ -1,73 +1,55 @@
-import { Target, Lightbulb } from "lucide-react";
+import { MessageSquare, Eye, Zap } from "lucide-react";
 
 const AboutSection = () => {
+  const steps = [
+    {
+      icon: MessageSquare,
+      title: "Describe",
+      description: "Tell us what repetitive task is eating up your time, in plain language.",
+    },
+    {
+      icon: Eye,
+      title: "Review",
+      description: "See the visual workflow we create. Understand every step before it runs.",
+    },
+    {
+      icon: Zap,
+      title: "Automate",
+      description: "Run your workflow with complete confidence and transparency.",
+    },
+  ];
+
   return (
-    <section id="about" className="py-24 bg-secondary/30">
+    <section id="about" className="py-32 bg-background">
       <div className="container">
-        <div className="max-w-3xl mx-auto text-center mb-16 animate-slide-up">
-          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
-            About Us
-          </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Making Automation Accessible to Everyone
+        <div className="max-w-3xl mx-auto text-center mb-20">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            Automation Made for People, Not Programmers
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            At Qalany, we believe that automation should be simple, transparent,
-            and accessible to everyone regardless of their technical background.
+            You know your work better than anyone. We just help you automate it 
+            without needing to learn technical skills.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {/* Mission Card */}
-          <div className="group relative bg-card rounded-3xl p-8 shadow-card border border-border hover:shadow-elevated transition-all duration-500 hover:-translate-y-2">
-            <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            
-            <div className="relative z-10">
-              <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6">
-                <Target className="w-7 h-7 text-accent" />
+        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          {steps.map((step, index) => (
+            <div
+              key={step.title}
+              className="text-center p-8"
+            >
+              <div className="w-16 h-16 rounded-2xl bg-secondary flex items-center justify-center mx-auto mb-6">
+                <step.icon className="w-8 h-8 text-accent" />
               </div>
               
-              <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                To democratize automation by creating tools that anyone can use.
-                We eliminate the complexity of traditional automation solutions,
-                allowing you to focus on what matters most - solving your problems
-                and growing your business.
-              </p>
-            </div>
-          </div>
-
-          {/* Vision Card */}
-          <div className="group relative bg-card rounded-3xl p-8 shadow-card border border-border hover:shadow-elevated transition-all duration-500 hover:-translate-y-2">
-            <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            
-            <div className="relative z-10">
-              <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6">
-                <Lightbulb className="w-7 h-7 text-accent" />
+              <div className="text-sm font-semibold text-primary mb-2">
+                Step {index + 1}
               </div>
               
-              <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
+              <h3 className="text-xl font-bold text-foreground mb-3">{step.title}</h3>
               <p className="text-muted-foreground leading-relaxed">
-                A world where automation is as natural as conversation. Where
-                anyone can describe their challenges in plain language and receive
-                intelligent, customizable solutions that provide complete
-                transparency and control over every step.
+                {step.description}
               </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Values */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-          {[
-            { label: "Simplicity", value: "First" },
-            { label: "Transparency", value: "Always" },
-            { label: "User Control", value: "Complete" },
-            { label: "Trust", value: "Earned" },
-          ].map((item) => (
-            <div key={item.label} className="text-center p-4">
-              <div className="text-2xl font-bold text-accent mb-1">{item.value}</div>
-              <div className="text-sm text-muted-foreground">{item.label}</div>
             </div>
           ))}
         </div>
